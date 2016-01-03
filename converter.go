@@ -7,8 +7,8 @@ type LightYear float64
 type Parsec float64
 
 const (
-	ParsecRef Parsec = 0.306601
-  LyInP LightYear = 3.26
+	PinLY Parsec = 0.306601
+  LYInP LightYear = 3.26
 )
 
 func (p Parsec) String() string    { return fmt.Sprintf("%gp", p) }

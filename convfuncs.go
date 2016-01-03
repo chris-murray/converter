@@ -2,13 +2,13 @@
 package converter
 
 // return the number of parsecs for the given distance in lightyears
-func LYtoParsec (lr LightYear) Parsec {
-  return Parsec(lr * ParsecRef )
+func LYtoParsec (ly LightYear) Parsec {
+  return Parsec(ly) * PinLY
 }
 
 // return the number of parsecs for the given distance in lightyears
 func PtoLY (p Parsec) LightYear {
-  return LightYear(p * LyInP )
+  return LightYear(p) * LYInP
 }
 
 
